@@ -1,0 +1,89 @@
+#game {
+  font-size: xx-large;
+  display: none;
+  background-image: url(https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 0;
+  color: white;
+  padding: 15px;
+}
+#menu-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 0;
+  color: white;
+}
+#menu {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0;
+  max-width: 50%;
+}
+
+.number-fact-selection {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 5px;
+}
+.startbrn {
+  font-size: x-large;
+  border-radius: 10px;
+}
+.number-fact-selection button {
+  border-radius: 5px;
+  height: 30px;
+}
+
+.imageGroup {
+  position: relative;
+}
+body {
+  margin: 0;
+}
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 300px;
+  gap: 3px;
+}
+
+.btn0 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.questionContainer {
+  display: flex;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.Ast {
+  width: 400px;
+  position: absolute;
+  left: 1400px;
+  top: 30px;
+}
+
+.Ship {
+  width: 400px;
+}
+
+.sumbitbtn {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}

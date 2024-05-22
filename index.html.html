@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="game.css" />
+    <script src="game.js"></script>
+  </head>
+  <body onload="Create();">
+<div id="menu-container">
+    <div id="menu">
+      <h1>Times tables in outerspace</h1>
+
+      <p>Choose the timetable you want to practice</p>
+      <div class="number-fact-selection">
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>10</button>
+        <button>11</button>
+        <button>12</button>
+      </div>
+
+      <h2>instructions</h2>
+      <p>
+        The goal of the game is to destroy as many astriods as possible. In
+        order to do that you must answer the time tables correctly to fire the
+        laser
+      </p>
+      <button class="startbrn" onclick="GoToGame()">start</button>
+    </div>
+</div>
+    <div id="game">
+      <button class="startbrn" onclick="GoToMenu()">Go back</button>
+      <div id = "score">
+        score = 0
+      </div>
+      <div id="chances">
+chances = 3
+      </div>
+
+      <div class="imageGroup">
+        <img src="spaceship-removebg-preview.png" class="Ship"/>
+        <img src="Aststeriod-removebg-preview.png" id="Ast1" class="Ast" />
+        <div class="questionContainer">
+        <p id="question"></p> <p id = "inp"></p>
+        </div>
+<div class="numpad">    
+    <button onclick="enterNumber(1)">1</button>   
+    <button onclick="enterNumber(2)">2</button>
+    <button onclick="enterNumber(3)">3</button>
+    <button onclick="enterNumber(4)">4</button>
+    <button onclick="enterNumber(5)">5</button>
+    <button onclick="enterNumber(6)">6</button>
+    <button onclick="enterNumber(7)">7</button>
+    <button onclick="enterNumber(8)">8</button>
+    <button onclick="enterNumber(9)">9</button>
+    <button class="btn0" onclick="enterNumber(0)">0</button>
+    <button onclick="clearInput()">Clear</button>
+    <button class="sumbitbtn" onclick="CheckAnswer()">submit</button>
+</div>
+
+
+
+
+  </body>
+</html>
